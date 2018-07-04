@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+
+before_script:
+    - curl -s http://getcomposer.org/installer | php
+    - php composer.phar install
+    - mysql -e 'create database IF NOT EXISTS revpdf_test;'
+
+script:
+  - phpunit --configuration tests/vendor/travis/phpunit.travis.xml
