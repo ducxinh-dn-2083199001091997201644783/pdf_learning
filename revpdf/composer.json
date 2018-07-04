@@ -1,0 +1,51 @@
+{
+    "name" : "rev42/revpdf-gui",
+    "type" : "library",
+    "description" : "Graphical PDF generation tool for PHP",
+    "keywords" : ["revpdf", "pdf", "php"],
+    "homepage" : "http://www.revpdf.org",
+    "version": "0.9.8-dev",
+    "license" : "GPL-3.0",
+    "authors" : [
+        {
+            "name": "Olivier Cornu",
+            "email": "contact@revpdf.org"
+        }
+    ],
+    "require": {
+        "php"                   : ">=5.3.3",
+        "silex/silex"           : "~1.0.0",
+        "rev42/revpdf-lib"      : "dev-master",
+        "twig/twig"             : ">=1.8.0,<2.0-dev",
+        "monolog/monolog"       : "~1.9.0",
+        "symfony/form"          : "~2.3.0",
+        "symfony/translation"   : "~2.3.0",
+        "symfony/twig-bridge"   : "~2.3.0",
+        "symfony/validator"     : "~2.3.0",
+        "symfony/yaml"          : "~2.3.0",
+        "symfony/config"        : "~2.3.0",
+        "symfony/security"      : "~2.3.0",
+        "symfony/finder"        : "~2.3.0",
+        "doctrine/dbal"         : "~2.2.0",
+        "lightopenid/lightopenid" : "~0.7.0",
+        "knplabs/repository-service-provider" : "dev-master",
+        "swiftmailer/swiftmailer": "~5.1.0",
+        "symfony/console"       : "~2.3.0",
+        "symfony/process"       : "~2.3.0"
+    },
+    "require-dev": {
+        "twig/extensions": "dev-master",
+        "symfony/dom-crawler" : "~2.3",
+        "symfony/css-selector" : "~2.3",
+        "symfony/browser-kit" : "~2.3",
+        "symfony/Filesystem" : "~2.3"
+    },
+    "config": {
+        "process-timeout": 500
+    },
+    "autoload": {
+        "psr-0": {
+            "RevPDF": "src/"
+        }
+    }
+}

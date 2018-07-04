@@ -1,0 +1,3 @@
+## Known Issues
+
+Resizable image cannot be dragged: see http://bugs.jqueryui.com/ticket/3446
